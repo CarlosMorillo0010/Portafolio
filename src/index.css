@@ -1016,7 +1016,11 @@ code {
 
 .card__media img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  /* Sin esto el atributo height del HTML fija la altura y aspect-ratio se
+     ignora: la imagen sale casi cuadrada y cover se come los lados. */
+  height: auto;
+  /* Proporción real de las capturas: encuadran sin recorte lateral. */
+  aspect-ratio: 1568 / 698;
   object-fit: cover;
   border-bottom: 1px solid var(--border);
 }

@@ -13,8 +13,8 @@ export default function ProjectCard({ project }) {
           src={project.image}
           alt={`Captura de ${project.title}`}
           loading="lazy"
-          width="600"
-          height="375"
+          width="784"
+          height="349"
         />
       </div>
 
