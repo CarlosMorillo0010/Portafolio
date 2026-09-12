@@ -8,16 +8,6 @@ export default function ProjectCard({ project }) {
         <span>{project.year}</span>
       </div>
 
-      <div className="card__media">
-        <img
-          src={project.image}
-          alt={`Captura de ${project.title}`}
-          loading="lazy"
-          width="784"
-          height="349"
-        />
-      </div>
-
       <div className="card__body">
         <h3 className="card__title">{project.title}</h3>
         <p className="card__desc">{project.description}</p>

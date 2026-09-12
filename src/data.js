@@ -214,7 +214,6 @@ export const projects = [
     description:
       'Sitio de agencia de marketing digital: catálogo de servicios de campañas, SEO y generación de leads, con captación por formulario.',
     tech: ['WordPress', 'Elementor', 'WooCommerce', 'PHP'],
-    image: '/projects/portal-ads.jpg',
     demo: 'https://portal-ads.com/',
   },
   {
@@ -225,7 +224,6 @@ export const projects = [
     description:
       'Plataforma de bróker multiactivo: forex, acciones, futuros y metales, con área de cuenta, blog formativo y avisos regulatorios.',
     tech: ['WordPress', 'Elementor', 'WooCommerce', 'LiteSpeed'],
-    image: '/projects/aurumtage.jpg',
     demo: 'https://aurumtage.com/',
   },
   {
@@ -236,7 +234,6 @@ export const projects = [
     description:
       'Aplicación de una sola página para trading de CFDs, con cotizaciones en vivo, catálogo de productos y alta de cuenta 100% digital.',
     tech: ['React', 'JavaScript', 'Cloudflare'],
-    image: '/projects/capital-investment-sri.jpg',
     demo: 'https://capitalinvestmentsri.com/',
   },
   {
@@ -247,7 +244,6 @@ export const projects = [
     description:
       'Directorio médico de Venezuela: más de 60 especialidades filtrables por estado, fichas de profesionales y clínicas, alta de anunciantes y una Zona Veterinaria dedicada.',
     tech: ['WordPress', 'Elementor', 'PHP', 'MySQL'],
-    image: '/projects/guia-mediconsulta.jpg',
     demo: 'https://guiamediconsulta.com/',
   },
   {
@@ -258,7 +254,6 @@ export const projects = [
     description:
       'Centro de diagnóstico por imagen: catálogo de estudios, agendamiento de citas y fichas del equipo médico, con sedes y horarios diferenciados.',
     tech: ['WordPress', 'WooCommerce', 'PHP', 'LiteSpeed'],
-    image: '/projects/imagenologia-la-urbina.jpg',
     demo: 'https://www.imagenologialaurbina.com.ve/',
   },
 ]
