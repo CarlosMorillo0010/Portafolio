@@ -1,7 +1,11 @@
 import { describe, it, expect } from 'vitest'
 import { validate } from './validation.js'
 
-const valid = { name: 'Ana', email: 'ana@example.com', message: 'Hola, quiero hablar de un proyecto.' }
+const valid = {
+  name: 'Ana',
+  email: 'ana@example.com',
+  message: 'Hola, quiero hablar de un proyecto.',
+}
 
 describe('validate', () => {
   it('no devuelve errores con un formulario completo y correcto', () => {

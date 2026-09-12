@@ -17,8 +17,8 @@
   --red: #e0716c;
   --selection: rgba(245, 165, 36, 0.22);
 
-  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --sans: "IBM Plex Sans", ui-sans-serif, "Segoe UI", sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --sans: 'IBM Plex Sans', ui-sans-serif, 'Segoe UI', sans-serif;
 
   --radius: 3px;
   --max-width: 1080px;
@@ -29,7 +29,7 @@
   color-scheme: dark;
 }
 
-:root[data-theme="light"] {
+:root[data-theme='light'] {
   --bg: #f6f5f0;
   --bg-subtle: #eeece5;
   --surface: #fffefa;
@@ -77,7 +77,7 @@ body {
 
 /* Rejilla tenue: sugiere el buffer de una terminal, no lo imita. */
 body::before {
-  content: "";
+  content: '';
   position: fixed;
   inset: 0;
   z-index: -1;
@@ -328,11 +328,13 @@ code {
   color: var(--text-muted);
   font-size: 13px;
   border: 1px solid transparent;
-  transition: color 0.15s var(--ease), background-color 0.15s var(--ease);
+  transition:
+    color 0.15s var(--ease),
+    background-color 0.15s var(--ease);
 }
 
 .titlebar__link::before {
-  content: "./";
+  content: './';
   color: var(--border-strong);
 }
 
@@ -346,12 +348,12 @@ code {
   color: var(--bg);
 }
 
-.titlebar__link[aria-current="true"] {
+.titlebar__link[aria-current='true'] {
   color: var(--amber);
   border-color: var(--border-strong);
 }
 
-.titlebar__link[aria-current="true"]::before {
+.titlebar__link[aria-current='true']::before {
   color: var(--amber);
 }
 
@@ -366,7 +368,9 @@ code {
   background: transparent;
   color: var(--text-muted);
   cursor: pointer;
-  transition: color 0.15s var(--ease), background-color 0.15s var(--ease);
+  transition:
+    color 0.15s var(--ease),
+    background-color 0.15s var(--ease);
 }
 
 .icon-button:hover {
@@ -470,7 +474,7 @@ code {
 }
 
 .badge-avail::before {
-  content: "";
+  content: '';
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -571,7 +575,9 @@ code {
   font-size: 11.5px;
   white-space: nowrap;
   box-shadow: 0 6px 18px -8px rgba(0, 0, 0, 0.85);
-  transition: color 0.15s var(--ease), background-color 0.15s var(--ease),
+  transition:
+    color 0.15s var(--ease),
+    background-color 0.15s var(--ease),
     border-color 0.15s var(--ease);
 }
 
@@ -584,10 +590,18 @@ code {
   flex: none;
 }
 
-.tech-badge--amber i { background: var(--amber); }
-.tech-badge--green i { background: var(--green); }
-.tech-badge--cyan i { background: var(--cyan); }
-.tech-badge--red i { background: var(--red); }
+.tech-badge--amber i {
+  background: var(--amber);
+}
+.tech-badge--green i {
+  background: var(--green);
+}
+.tech-badge--cyan i {
+  background: var(--cyan);
+}
+.tech-badge--red i {
+  background: var(--red);
+}
 
 .tech-badge:hover {
   background: var(--amber);
@@ -613,7 +627,9 @@ code {
   color: var(--text);
   font-size: 13px;
   cursor: pointer;
-  transition: color 0.15s var(--ease), background-color 0.15s var(--ease),
+  transition:
+    color 0.15s var(--ease),
+    background-color 0.15s var(--ease),
     border-color 0.15s var(--ease);
 }
 
@@ -676,7 +692,7 @@ code {
 }
 
 .facts__file::before {
-  content: "# ";
+  content: '# ';
   color: var(--border-strong);
 }
 
@@ -700,7 +716,7 @@ code {
 }
 
 .facts__key::before {
-  content: "--";
+  content: '--';
   margin-right: 4px;
   color: var(--border-strong);
 }
@@ -721,7 +737,7 @@ code {
 }
 
 .facts__note::before {
-  content: "// ";
+  content: '// ';
 }
 
 /* =========================================================
@@ -763,7 +779,9 @@ code {
   color: var(--green);
   border-radius: 2px;
   padding: 0 2px;
-  transition: background-color 0.15s var(--ease), color 0.15s var(--ease);
+  transition:
+    background-color 0.15s var(--ease),
+    color 0.15s var(--ease);
 }
 
 .json__val:hover {
@@ -803,7 +821,7 @@ code {
 }
 
 .log__main::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -4px;
   top: 9px;
@@ -815,7 +833,9 @@ code {
 
 .log__entry--head .log__main::before {
   background: var(--amber);
-  box-shadow: 0 0 0 3px var(--bg), 0 0 10px var(--amber);
+  box-shadow:
+    0 0 0 3px var(--bg),
+    0 0 10px var(--amber);
 }
 
 .log__head {
@@ -858,7 +878,7 @@ code {
 }
 
 .log__bullets li::before {
-  content: "- ";
+  content: '- ';
   font-family: var(--mono);
   color: var(--text-muted);
 }
@@ -888,7 +908,9 @@ code {
   color: var(--text-muted);
   font-size: 12.5px;
   cursor: pointer;
-  transition: color 0.15s var(--ease), background-color 0.15s var(--ease),
+  transition:
+    color 0.15s var(--ease),
+    background-color 0.15s var(--ease),
     border-color 0.15s var(--ease);
 }
 
@@ -921,7 +943,9 @@ code {
   border-radius: var(--radius);
   background: var(--surface);
   overflow: hidden;
-  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease),
+  transition:
+    border-color 0.2s var(--ease),
+    transform 0.2s var(--ease),
     opacity 0.55s var(--ease);
 }
 
@@ -1018,7 +1042,7 @@ code {
 }
 
 .empty::before {
-  content: "// ";
+  content: '// ';
 }
 
 /* =========================================================
@@ -1051,7 +1075,7 @@ code {
 }
 
 .field label::before {
-  content: "--";
+  content: '--';
   color: var(--border-strong);
   margin-right: 4px;
 }
@@ -1086,8 +1110,8 @@ code {
   border-color: var(--amber);
 }
 
-.field input[aria-invalid="true"],
-.field textarea[aria-invalid="true"] {
+.field input[aria-invalid='true'],
+.field textarea[aria-invalid='true'] {
   border-color: var(--red);
 }
 
@@ -1097,7 +1121,7 @@ code {
 }
 
 .field__error::before {
-  content: "error: ";
+  content: 'error: ';
 }
 
 .form__foot {
@@ -1122,7 +1146,7 @@ code {
 }
 
 .form__status:not(:empty)::before {
-  content: "✓ ";
+  content: '✓ ';
 }
 
 .links {
@@ -1140,7 +1164,9 @@ code {
   background: var(--surface);
   color: var(--text-soft);
   font-size: 13px;
-  transition: color 0.15s var(--ease), background-color 0.15s var(--ease),
+  transition:
+    color 0.15s var(--ease),
+    background-color 0.15s var(--ease),
     border-color 0.15s var(--ease);
 }
 
@@ -1222,7 +1248,9 @@ code {
 [data-reveal] {
   opacity: 0;
   transform: translateY(18px);
-  transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
+  transition:
+    opacity 0.55s var(--ease),
+    transform 0.55s var(--ease);
 }
 
 [data-reveal].is-visible {

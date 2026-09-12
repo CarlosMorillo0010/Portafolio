@@ -25,14 +25,14 @@ node src/validation.check.mjs
 
 Todo el contenido editable vive en **`src/data.js`**:
 
-| Export | Qué controla |
-|---|---|
-| `profile` | Usuario/host del prompt, nombre, rol, avatar, disponibilidad, salida de `whoami`, **tecnologías flotantes**, correo y redes |
-| `about` | Párrafos y el bloque `perfil.conf`. Los años de experiencia **se calculan** desde `TRABAJANDO_DESDE` en `data.js`: cambias el año de inicio una vez y no se vuelve a quedar viejo |
-| `stack` | Grupos de tecnologías; se renderizan como el JSON que son |
-| `experience` | Entradas del `git log`: hash, período, puesto, empresa y viñetas. `ref` marca el actual |
-| `projects` | Slug, título, año, descripción, tecnologías, imagen, demo y repositorio |
-| `sections` | Id, etiqueta y **comando** de cada sección |
+| Export       | Qué controla                                                                                                                                                                      |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `profile`    | Usuario/host del prompt, nombre, rol, avatar, disponibilidad, salida de `whoami`, **tecnologías flotantes**, correo y redes                                                       |
+| `about`      | Párrafos y el bloque `perfil.conf`. Los años de experiencia **se calculan** desde `TRABAJANDO_DESDE` en `data.js`: cambias el año de inicio una vez y no se vuelve a quedar viejo |
+| `stack`      | Grupos de tecnologías; se renderizan como el JSON que son                                                                                                                         |
+| `experience` | Entradas del `git log`: hash, período, puesto, empresa y viñetas. `ref` marca el actual                                                                                           |
+| `projects`   | Slug, título, año, descripción, tecnologías, imagen, demo y repositorio                                                                                                           |
+| `sections`   | Id, etiqueta y **comando** de cada sección                                                                                                                                        |
 
 ## El avatar
 
@@ -119,15 +119,14 @@ Los tokens viven al inicio de `src/index.css`. El **tema oscuro es el predetermi
 
 ### Cada sección es un comando
 
-| Sección | Comando | Cómo se renderiza |
-|---|---|---|
-| Inicio | `whoami` | Ventana de terminal con el comando tecleándose |
-| Sobre mí | `cat sobre-mi.md` | Prosa + bloque de datos clave/valor |
-| Stack | `cat stack.json` | El objeto JSON real, con resaltado de sintaxis |
-| Experiencia | `git log --oneline` | Historial de commits con hash y `HEAD -> main` |
-| Proyectos | `ls proyectos/` | Rejilla; al filtrar pasa a `ls proyectos/ \| grep React` |
-| Contacto | `./contacto.sh` | Formulario con etiquetas estilo flags (`--nombre`) |
-
+| Sección     | Comando             | Cómo se renderiza                                        |
+| ----------- | ------------------- | -------------------------------------------------------- |
+| Inicio      | `whoami`            | Ventana de terminal con el comando tecleándose           |
+| Sobre mí    | `cat sobre-mi.md`   | Prosa + bloque de datos clave/valor                      |
+| Stack       | `cat stack.json`    | El objeto JSON real, con resaltado de sintaxis           |
+| Experiencia | `git log --oneline` | Historial de commits con hash y `HEAD -> main`           |
+| Proyectos   | `ls proyectos/`     | Rejilla; al filtrar pasa a `ls proyectos/ \| grep React` |
+| Contacto    | `./contacto.sh`     | Formulario con etiquetas estilo flags (`--nombre`)       |
 
 ## Estructura
 

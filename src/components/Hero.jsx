@@ -17,7 +17,7 @@ const encontrado = import.meta.glob('../assets/avatar.{avif,webp,png,jpg,jpeg}',
 const PRIORIDAD = ['.avif', '.webp', '.png', '.jpg', '.jpeg']
 const elegido = Object.keys(encontrado).sort(
   (a, b) =>
-    PRIORIDAD.findIndex((ext) => a.endsWith(ext)) - PRIORIDAD.findIndex((ext) => b.endsWith(ext))
+    PRIORIDAD.findIndex((ext) => a.endsWith(ext)) - PRIORIDAD.findIndex((ext) => b.endsWith(ext)),
 )[0]
 const AVATAR_DETECTADO = elegido ? encontrado[elegido] : null
 // El nombre sale del archivo real, no de una cadena fija: si cambias el formato
@@ -28,7 +28,7 @@ function AvatarFrame() {
   const { asciiAvatar, name } = profile
   const photo = profile.photo ?? AVATAR_DETECTADO
   const etiqueta = photo
-    ? (profile.photo ? profile.photo.split('/').pop() : AVATAR_NOMBRE) ?? 'avatar'
+    ? ((profile.photo ? profile.photo.split('/').pop() : AVATAR_NOMBRE) ?? 'avatar')
     : 'avatar.txt'
 
   return (

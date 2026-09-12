@@ -58,7 +58,10 @@ describe('profile.asciiAvatar', () => {
 
   it('mantiene todas las lineas dentro del ancho fijo', () => {
     for (const [i, l] of profile.asciiAvatar.entries()) {
-      expect(l.length, `linea ${i + 1} mide ${l.length}, supera ${ANCHO} columnas`).toBeLessThanOrEqual(ANCHO)
+      expect(
+        l.length,
+        `linea ${i + 1} mide ${l.length}, supera ${ANCHO} columnas`,
+      ).toBeLessThanOrEqual(ANCHO)
     }
   })
 

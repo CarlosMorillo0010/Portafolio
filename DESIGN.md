@@ -6,8 +6,8 @@
 
 **El portafolio es un artefacto del oficio, no una portada sobre el oficio.**
 
-Alguien que lo abre una sola vez debe recordar: *"ese tipo hizo su portafolio como una
-terminal, y funcionaba de verdad."* No el color, no la animación: la idea.
+Alguien que lo abre una sola vez debe recordar: _"ese tipo hizo su portafolio como una
+terminal, y funcionaba de verdad."_ No el color, no la animación: la idea.
 
 Cada decisión de abajo sirve a esa frase. Lo que no la sirve, se corta.
 
@@ -36,25 +36,25 @@ con avaricia.** Si todo está coloreado, nada está coloreado.
 
 ### Oscuro (predeterminado)
 
-| Token | Hex | Uso |
-|---|---|---|
-| `--bg` | `#0c0d0c` | Fondo. Negro con un grado de verde, nunca `#000` |
-| `--bg-subtle` | `#111311` | Bandas de sección |
-| `--surface` | `#151715` | Ventanas, tarjetas |
-| `--border` | `#242724` | Hairlines |
-| `--text` | `#d7dbd5` | Texto principal. Blanco fosforado, no blanco puro |
-| `--text-muted` | `#7e857c` | Comentarios, metadatos |
-| `--amber` | `#f5a524` | **Acento primario**: prompts, foco, CTA |
-| `--green` | `#5ec98a` | Cadenas, disponibilidad, éxito |
-| `--cyan` | `#57a9c9` | Enlaces, nombres de función |
-| `--red` | `#e0716c` | Errores de validación |
+| Token          | Hex       | Uso                                               |
+| -------------- | --------- | ------------------------------------------------- |
+| `--bg`         | `#0c0d0c` | Fondo. Negro con un grado de verde, nunca `#000`  |
+| `--bg-subtle`  | `#111311` | Bandas de sección                                 |
+| `--surface`    | `#151715` | Ventanas, tarjetas                                |
+| `--border`     | `#242724` | Hairlines                                         |
+| `--text`       | `#d7dbd5` | Texto principal. Blanco fosforado, no blanco puro |
+| `--text-muted` | `#7e857c` | Comentarios, metadatos                            |
+| `--amber`      | `#f5a524` | **Acento primario**: prompts, foco, CTA           |
+| `--green`      | `#5ec98a` | Cadenas, disponibilidad, éxito                    |
+| `--cyan`       | `#57a9c9` | Enlaces, nombres de función                       |
+| `--red`        | `#e0716c` | Errores de validación                             |
 
 ### Claro
 
 Misma estructura, tema de editor claro. `--bg: #f6f5f0`, `--text: #1b1d19`,
 `--amber: #a86800`, `--green: #2b8a5a`, `--cyan: #1d7791`.
 
-**Por qué ámbar y no verde:** el verde fósforo sobre negro es *el* cliché de terminal.
+**Por qué ámbar y no verde:** el verde fósforo sobre negro es _el_ cliché de terminal.
 El ámbar era el otro monitor, se ve menos, y es cálido donde todos los portafolios de
 dev son fríos.
 
@@ -65,10 +65,10 @@ además el acento por defecto de todo diseño generado por IA.
 
 ## Tipografía
 
-| Rol | Fuente | Por qué |
-|---|---|---|
+| Rol                      | Fuente            | Por qué                                                                                   |
+| ------------------------ | ----------------- | ----------------------------------------------------------------------------------------- |
 | Interfaz, títulos, datos | **IBM Plex Mono** | Monoespaciada con carácter propio. Herencia IBM, humanista, no la mono neutra por defecto |
-| Párrafos largos | **IBM Plex Sans** | Misma superfamilia: coherencia sin esfuerzo. La mono cansa más allá de tres renglones |
+| Párrafos largos          | **IBM Plex Sans** | Misma superfamilia: coherencia sin esfuerzo. La mono cansa más allá de tres renglones     |
 
 **Prohibidas:** Inter, Roboto, Poppins, Montserrat, Space Grotesk, `system-ui` como cara
 principal. Todas son la señal de haberse rendido con la tipografía.

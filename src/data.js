@@ -20,20 +20,20 @@ export const profile = {
   // Avatar ASCII: es texto, así que hereda el color del tema y escala con el
   // contenedor. Si algún día pones un PNG en `photo`, este se retira solo.
   asciiAvatar: [
-    "        ____________",
-    "       /            \\",
-    "      |  ___   ___   |",
-    "   ,--|  |_o|  |o_|  |--,",
-    "   |  |              |  |",
-    "   |  |      ||      |  |",
-    "   |  |   \\______/   |  |",
-    "   |  \\______________/  |",
+    '        ____________',
+    '       /            \\',
+    '      |  ___   ___   |',
+    '   ,--|  |_o|  |o_|  |--,',
+    '   |  |              |  |',
+    '   |  |      ||      |  |',
+    '   |  |   \\______/   |  |',
+    '   |  \\______________/  |',
     "   '--,              ,--'",
-    "           |    |",
-    "     ______|    |______",
-    "    /                  \\",
-    "    |  $ whoami        |",
-    "    |__________________|",
+    '           |    |',
+    '     ______|    |______',
+    '    /                  \\',
+    '    |  $ whoami        |',
+    '    |__________________|',
   ],
   // Tecnologías que flotan alrededor del avatar. `tone` elige el color de
   // sintaxis del cuadrito; `top` más `left` o `right` la posición (porcentajes
@@ -107,7 +107,10 @@ export const stack = [
   { key: 'frontend', items: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React'] },
   { key: 'datos', items: ['MySQL', 'consultas complejas', 'diseño relacional'] },
   { key: 'infra', items: ['Docker', 'Git', 'GitHub', 'CI/CD', 'NPM', 'Composer'] },
-  { key: 'seguridad', items: ['hardening de servidores', 'prevención SQL/XSS', 'caching', 'minificación'] },
+  {
+    key: 'seguridad',
+    items: ['hardening de servidores', 'prevención SQL/XSS', 'caching', 'minificación'],
+  },
 ]
 
 // Se renderiza como `git log --oneline`. El hash es decorativo: invéntalo o usa uno real.
