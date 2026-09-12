@@ -8,18 +8,22 @@ const prefersReduced = () =>
 // Teclea `text` carácter a carácter. Con reduced-motion devuelve el texto completo
 // de entrada: la accesibilidad no es un modo degradado.
 export function useTyped(text, { speed = 46, delay = 220 } = {}) {
-  const [shown, setShown] = useState('')
-  const [done, setDone] = useState(false)
+  const reduced = prefersReduced()
+  const [shown, setShown] = useState(() => (reduced ? text : ''))
+  const [done, setDone] = useState(reduced)
+
+  // Reinicia al cambiar `text` ajustando el estado durante el render. Hacerlo
+  // dentro del effect encadena un render extra por cada reinicio.
+  const [lastText, setLastText] = useState(text)
+  if (lastText !== text) {
+    setLastText(text)
+    setShown(reduced ? text : '')
+    setDone(reduced)
+  }
 
   useEffect(() => {
-    if (prefersReduced()) {
-      setShown(text)
-      setDone(true)
-      return
-    }
+    if (reduced) return
 
-    setShown('')
-    setDone(false)
     let index = 0
     let timer
 
@@ -35,7 +39,7 @@ export function useTyped(text, { speed = 46, delay = 220 } = {}) {
 
     timer = setTimeout(tick, delay)
     return () => clearTimeout(timer)
-  }, [text, speed, delay])
+  }, [text, speed, delay, reduced])
 
   return [shown, done]
 }
