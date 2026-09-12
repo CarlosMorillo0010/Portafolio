@@ -465,6 +465,48 @@ code {
   max-width: 62ch;
 }
 
+/* Bloque de código tecleado tras el whoami. La jerarquía es por color de
+   sintaxis, no por tamaño: un acento primario y tres semánticos. */
+.term__code {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text);
+  white-space: pre-wrap;
+  overflow-x: auto;
+  /* Altura final reservada desde el primer fotograma para que el tecleo no
+     empuje los botones de abajo. */
+  min-height: calc(var(--code-lines, 6) * 1.65em);
+}
+
+.term__code code {
+  font: inherit;
+}
+
+.tok--keyword {
+  color: var(--amber);
+}
+
+.tok--string {
+  color: var(--green);
+}
+
+.tok--prop {
+  color: var(--cyan);
+}
+
+.tok--number,
+.tok--literal {
+  color: var(--red);
+}
+
+.tok--comment,
+.tok--punct {
+  color: var(--text-muted);
+}
+
 .badge-avail {
   display: inline-flex;
   align-items: center;

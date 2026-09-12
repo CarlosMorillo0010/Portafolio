@@ -17,6 +17,19 @@ export const profile = {
     'Ingeniero de Software y Desarrollador Full Stack con enfoque híbrido: lógica backend y visión de diseño.',
     'Arquitecturas políglotas — Laravel para sistemas empresariales, Node.js para servicios en tiempo real.',
   ],
+  // Código que se teclea después del whoami. Array de líneas, igual que el
+  // avatar ASCII: editarlo aquí no exige tocar ningún componente.
+  snippet: {
+    cmd: 'cat perfil.js',
+    code: [
+      'const carlos = {',
+      "  rol: 'ingeniero de software',",
+      "  stack: ['laravel', 'node', 'react'],",
+      "  enfoque: 'backend + diseño',",
+      '  disponible: true,',
+      '}',
+    ],
+  },
   // Avatar ASCII: es texto, así que hereda el color del tema y escala con el
   // contenedor. Si algún día pones un PNG en `photo`, este se retira solo.
   asciiAvatar: [

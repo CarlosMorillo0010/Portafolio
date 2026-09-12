@@ -1,6 +1,7 @@
 import { profile, sections } from '../data.js'
 import { useTyped } from '../useTyped.js'
 import { GitHubIcon, LinkedInIcon, MailIcon } from './Icons.jsx'
+import CodeTyper from './CodeTyper.jsx'
 
 const SOCIAL_ICONS = { github: GitHubIcon, linkedin: LinkedInIcon }
 
@@ -97,6 +98,19 @@ export default function Hero() {
                 {line}
               </p>
             ))}
+
+            {profile.snippet && done && (
+              <>
+                <div className="term__spacer" />
+                <p className="term__line">
+                  <span className="prompt" aria-hidden="true">
+                    $
+                  </span>
+                  <span>{profile.snippet.cmd}</span>
+                </p>
+                <CodeTyper code={profile.snippet.code} />
+              </>
+            )}
 
             <div className="hero__actions">
               <a className="btn btn--primary" href="#contacto">
