@@ -203,77 +203,63 @@ export const experience = [
 // EJEMPLO. Las tecnologías sí son las tuyas para que el filtro no mienta.
 // Reemplázalos por trabajo real antes de publicar el sitio.
 export const projects = [
+  // Trabajo real para clientes: sin repositorio público, por eso `repo` se omite
+  // (la tarjeta ya lo trata como opcional). El `year` marcado como "confirmar"
+  // es una estimación: no hay evidencia pública de la fecha de entrega.
   {
     id: 1,
-    slug: 'sistema-gestion',
-    title: 'Sistema de gestión interna',
-    year: '2025',
+    slug: 'portal-ads',
+    title: 'Portal ADS',
+    year: '2025', // evidencia: (c) 2025 en el pie
     description:
-      'Plataforma administrativa con roles, reportes y colas de procesamiento en segundo plano.',
-    tech: ['Laravel', 'PHP', 'MySQL', 'Docker'],
+      'Sitio de agencia de marketing digital: catálogo de servicios de campañas, SEO y generación de leads, con captación por formulario.',
+    tech: ['WordPress', 'Elementor', 'WooCommerce', 'PHP'],
     image: '/projects/project-1.svg',
-    demo: 'https://ejemplo.com/demo-1',
-    repo: 'https://github.com/CarlosMorillo0010',
+    demo: 'https://portal-ads.com/',
   },
   {
     id: 2,
-    slug: 'tema-wordpress',
-    title: 'Tema WordPress a medida',
-    year: '2025',
+    slug: 'aurumtage',
+    title: 'AurumTage',
+    year: '2026', // evidencia: (c) 2026 en el pie
     description:
-      'Tema propio con bloques personalizados, optimización WPO y puntuación alta en Core Web Vitals.',
-    tech: ['WordPress', 'PHP', 'CSS3', 'JavaScript'],
+      'Plataforma de bróker multiactivo: forex, acciones, futuros y metales, con área de cuenta, blog formativo y avisos regulatorios.',
+    tech: ['WordPress', 'Elementor', 'WooCommerce', 'LiteSpeed'],
     image: '/projects/project-2.svg',
-    demo: 'https://ejemplo.com/demo-2',
-    repo: 'https://github.com/CarlosMorillo0010',
+    demo: 'https://aurumtage.com/',
   },
   {
     id: 3,
-    slug: 'api-rest',
-    title: 'API REST con autenticación',
-    year: '2024',
+    slug: 'capital-investment-sri',
+    title: 'Capital Investment SRI',
+    year: '2026', // confirmar
     description:
-      'Servicio REST con autenticación JWT, control de permisos y documentación de endpoints.',
-    tech: ['Node.js', 'JWT', 'MySQL'],
+      'Aplicación de una sola página para trading de CFDs, con cotizaciones en vivo, catálogo de productos y alta de cuenta 100% digital.',
+    tech: ['React', 'JavaScript', 'Cloudflare'],
     image: '/projects/project-3.svg',
-    demo: 'https://ejemplo.com/demo-3',
-    repo: 'https://github.com/CarlosMorillo0010',
+    demo: 'https://capitalinvestmentsri.com/',
   },
   {
     id: 4,
-    slug: 'plugin-wordpress',
-    title: 'Plugin WordPress a medida',
-    year: '2024',
+    slug: 'guia-mediconsulta',
+    title: 'Guía MediConsulta',
+    year: '2022', // evidencia: (c) 2022 en el pie
     description:
-      'Plugin con hooks propios, panel de ajustes y comandos WP-CLI para tareas de mantenimiento.',
-    tech: ['WordPress', 'PHP', 'WP-CLI'],
+      'Directorio médico de Venezuela: más de 60 especialidades filtrables por estado, fichas de profesionales y clínicas, alta de anunciantes y una Zona Veterinaria dedicada.',
+    tech: ['WordPress', 'Elementor', 'PHP', 'MySQL'],
     image: '/projects/project-4.svg',
-    demo: 'https://ejemplo.com/demo-4',
-    repo: 'https://github.com/CarlosMorillo0010',
+    demo: 'https://guiamediconsulta.com/',
   },
   {
     id: 5,
-    slug: 'panel-react',
-    title: 'Panel de administración',
-    year: '2023',
+    slug: 'imagenologia-la-urbina',
+    title: 'Imagenología La Urbina',
+    year: '2025', // confirmar
     description:
-      'Interfaz de administración con tablas filtrables, formularios validados y consumo de API REST.',
-    tech: ['React', 'JavaScript', 'CSS3'],
+      'Centro de diagnóstico por imagen: catálogo de estudios, agendamiento de citas y fichas del equipo médico, con sedes y horarios diferenciados.',
+    tech: ['WordPress', 'WooCommerce', 'PHP', 'LiteSpeed'],
     image: '/projects/project-5.svg',
-    demo: 'https://ejemplo.com/demo-5',
-    repo: 'https://github.com/CarlosMorillo0010',
-  },
-  {
-    id: 6,
-    slug: 'migracion-hosting',
-    title: 'Migración y hardening',
-    year: '2023',
-    description:
-      'Migración de sitios entre hostings con integridad de datos, caching y endurecimiento del servidor.',
-    tech: ['Docker', 'PHP', 'MySQL'],
-    image: '/projects/project-6.svg',
-    demo: 'https://ejemplo.com/demo-6',
-    repo: 'https://github.com/CarlosMorillo0010',
+    demo: 'https://www.imagenologialaurbina.com.ve/',
   },
 ]
 
